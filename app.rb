@@ -1,10 +1,13 @@
 require 'telegram/bot'
+require 'dotenv'
+
 
 Dir["app/*.rb"].each {|file| require_relative file }
 
-token = '130186451:AAG7kAvnRhIJDoKGPU5BiHadTsAr3L9gyxs'
+Dotenv.load
+TOKEN = ENV['TOKEN']
 
-Telegram::Bot::Client.run(token) do |bot|
+Telegram::Bot::Client.run(TOKEN) do |bot|
   puts "started..."
   cons = Counsciousness.new
   bot.listen do |message|
