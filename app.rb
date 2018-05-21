@@ -10,6 +10,7 @@ TOKEN = ENV['TOKEN']
 Telegram::Bot::Client.run(TOKEN) do |bot|
   puts "started..."
   cons = Counsciousness.new
+  # puts bot.api.delete_webhook
   bot.listen do |message|
     case message.text
     when '/poll'

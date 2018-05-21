@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'telegram-bot-ruby', '~> 0.4.0'
+gem 'telegram-bot-ruby'
 
 group :development, :test do
   gem 'dotenv'

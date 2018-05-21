@@ -1,6 +1,7 @@
 COMMANDS = [
   '/sup - say hi to the bot',
-  '/help - obviously'
+  '/help - obviously',
+  '/poll - poll'
 ]
 
 class Counsciousness
